@@ -2,56 +2,40 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
-    <title>Bjoe Swimming Pool Designs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=5.0" />
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      Bjoe Swimming Pool Designs
-    </header>
+    <p>Bjoe Swimming Pool Designs</p>
     <p>Here at Bjoe, we are experts in pool design. We give the best of all designs needed.</p>
     
     <section id="pools" class="pools">
       <h2>Our Picture Grid</h2>
-      
       <div class="our-picture-grid">
         <div class="pictures">
-          <img src="{{ url_for('static', filename='pool.jpg') }}" alt="Swimming pool"/>
+          <img src="pool.jpg" alt="Swimming pool"/>
           <p>Your comfortability is our priority</p>
-          <form action="/like" method="post">
-            <button type="submit">Like it</button>
-          </form>
         </div>
       </div>
       
       <div class="our-picture-grid">
         <div class="pictures">
-          <img src="{{ url_for('static', filename='pool1.jpg') }}" alt="Constructing pool"/>
+          <img src="pool1.jpg" alt="Constructing pool"/>
           <p>Our experienced engineers will give you the best.</p>
-          <form action="/like" method="post">
-            <button type="submit">Like it</button>
-          </form>
         </div>
       </div>
       
       <div class="our-picture-grid">
         <div class="pictures">
-          <img src="{{ url_for('static', filename='pool2.jpg') }}" alt="Men working at pool"/>
+          <img src="pool2.jpg" alt="Men working at pool"/>
           <p>Our experienced engineers will give you the best.</p>
-          <form action="/like" method="post">
-            <button type="submit">Like it</button>
-          </form>
         </div>
       </div>
 
       <div class="our-picture-grid">
         <div class="pictures">
-          <img src="{{ url_for('static', filename='pool3.jpg') }}" alt="Swimming pool"/>
+          <img src="pool3.jpg" alt="Swimming pool"/>
           <p>Our experienced engineers will give you the best.</p>
-          <form action="/like" method="post">
-            <button type="submit">Like it</button>
-          </form>
         </div>
       </div>
     </section>
