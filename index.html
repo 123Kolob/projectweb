@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
     <title>Bjoe Swimming Pool Designs</title>
   </head>
   <body>
@@ -17,33 +17,41 @@
       
       <div class="our-picture-grid">
         <div class="pictures">
-          <img src="pool.jpg" alt="Swimming pool"/>
+          <img src="{{ url_for('static', filename='pool.jpg') }}" alt="Swimming pool"/>
           <p>Your comfortability is our priority</p>
-          <button>Like it</button>
+          <form action="/like" method="post">
+            <button type="submit">Like it</button>
+          </form>
         </div>
       </div>
       
       <div class="our-picture-grid">
         <div class="pictures">
-          <img src="pool1.jpg" alt="Constructing pool"/>
+          <img src="{{ url_for('static', filename='pool1.jpg') }}" alt="Constructing pool"/>
           <p>Our experienced engineers will give you the best.</p>
-          <button>Like it</button>
+          <form action="/like" method="post">
+            <button type="submit">Like it</button>
+          </form>
         </div>
       </div>
       
       <div class="our-picture-grid">
         <div class="pictures">
-          <img src="pool2.jpg" alt="Men working at pool"/>
+          <img src="{{ url_for('static', filename='pool2.jpg') }}" alt="Men working at pool"/>
           <p>Our experienced engineers will give you the best.</p>
-          <button>Like it</button>
+          <form action="/like" method="post">
+            <button type="submit">Like it</button>
+          </form>
         </div>
       </div>
 
       <div class="our-picture-grid">
         <div class="pictures">
-          <img src="pool3.jpg" alt="Swimming pool"/>
+          <img src="{{ url_for('static', filename='pool3.jpg') }}" alt="Swimming pool"/>
           <p>Our experienced engineers will give you the best.</p>
-          <button>Like it</button>
+          <form action="/like" method="post">
+            <button type="submit">Like it</button>
+          </form>
         </div>
       </div>
     </section>
